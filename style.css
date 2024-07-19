@@ -3,11 +3,11 @@ html
     margin: 0;
     height: 100%;
     background-color: #fff0f4;
+    background-image: url("background.gif");
 }
 #index-body
 {
     height: 70%;
-    background-image: url("background.gif");
 }
 #image-body
 {
