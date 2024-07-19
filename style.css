@@ -6,11 +6,9 @@ html
 #index-body
 {
     background-image: url("background.gif");
-    height: 70%;
 }
 #image-body
 {
-    height: 70%;
     background-color: #fff0f4;
 }
 header 
@@ -63,6 +61,10 @@ body, main
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+body 
+{
+    height: 70%;
 }
 h1 
 {
