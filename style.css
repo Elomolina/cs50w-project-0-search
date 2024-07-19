@@ -175,3 +175,10 @@ h2
     }
    
 }
+@media(min-width: 600px)
+{
+    main img 
+    {
+        height: 45px;
+    }
+}
