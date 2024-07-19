@@ -1,0 +1,177 @@
+html 
+{
+    margin: 0;
+    height: 100%;
+}
+#index-body
+{
+    background-image: url("background.gif");
+    height: 70%;
+}
+#image-body
+{
+    height: 70%;
+    background-color: #fff0f4;
+}
+header 
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 10%;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+header a 
+{
+    margin-top: 1em;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    margin-right: 1em;
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+}
+header a:hover 
+{
+    text-decoration: underline;
+}
+.input-container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+@font-face {
+    font-family: 'futura-bold';
+    src: url('Futura\ Bold\ font.ttf');
+}
+
+body, main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+h1 
+{
+    text-align: center;
+    margin-bottom: 0em;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 5.0rem;
+    letter-spacing: -0.07em;
+}
+section 
+{
+    display: flex;
+    justify-content: center;
+}
+main 
+{
+    width: 70%;
+}
+section
+{
+    width: 100%;
+}
+input[type=text]
+{
+    width: 90%;
+    padding: 1.2em;
+    border: 3px solid #8E3E63;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+    background-image: url("search.svg");
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position-y: 50%;
+    background-position-x: 0.5em;
+    padding-left:3em;
+    font-size: 1.02rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #B0578D;
+
+}
+input[type=text]:focus
+{
+    outline: none;
+}
+section 
+{
+    gap: 1em;
+}
+input[type=submit]
+{
+    background-color: rgb(87, 47, 47);
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    transition: 0.5s;
+}
+input[type=submit]:hover 
+{
+    transform: scale(1.1);
+}
+.totoro 
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+h2
+{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.3em;
+    text-align: end;
+    
+}
+h2 
+{
+    position: relative;
+    left: 30px;
+    color: #4B70F5;
+    font-size: 1rem;
+}
+@media(max-width: 600px)
+{
+    span 
+    {
+        font-size: 3.5rem;
+    }
+    header a 
+    {
+        font-size: 1rem;
+    } 
+    main
+    {
+        width: 100%;
+    }
+    input[type=text]
+    {
+        width: 70%;
+        padding: 0.8em;
+        padding-left: 3em;
+    }
+    h2 
+    {
+        font-size: 1rem;
+    }
+   
+}
