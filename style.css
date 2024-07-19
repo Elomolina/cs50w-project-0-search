@@ -2,14 +2,16 @@ html
 {
     margin: 0;
     height: 100%;
+    background-color: #fff0f4;
 }
 #index-body
 {
-    background-color: #fff0f4;
+    height: 70%;
     background-image: url("background.gif");
 }
 #image-body
 {
+    height: 70%;
     background-color: #fff0f4;
 }
 header 
@@ -62,10 +64,6 @@ body, main
     justify-content: center;
     align-items: center;
     gap: 1em;
-}
-body 
-{
-    height: 70%;
 }
 h1 
 {
