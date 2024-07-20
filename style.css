@@ -3,6 +3,9 @@ html
     margin: 0;
     height: 100%;
     background-color: #fff0f4;
+}
+.index-background 
+{
     background-image: url("background.gif");
 }
 #index-body
@@ -14,6 +17,11 @@ html
     height: 70%;
     background-color: #fff0f4;
 }
+#advanced-body 
+{
+    height: 100%;
+    margin: 0;
+}
 header 
 {
     width: 100%;
@@ -24,7 +32,25 @@ header
     gap: 1em;
     justify-content: flex-end;
 }
-
+.advanced-header 
+{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(128, 128, 128);
+}
+.advanced-header h3 
+{
+    margin-left: 1em;
+    font-family: "futura-bold";
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: rgb(98, 98, 98);
+}
+.advanced-header a 
+{
+    margin: 0;
+    margin-right: 1em;
+}
 header a 
 {
     margin-top: 1em;
@@ -82,6 +108,82 @@ main
 {
     width: 70%;
 }
+.main-advanced
+{
+    margin-top: 2em;
+    height: 80%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+}
+.main-advanced h2 
+{
+    margin-left: 1em;
+    color: #a5544d;
+}
+.main-advanced h4 
+{
+    margin-left: 1em;
+}
+.main-advanced h6
+{
+    font-weight: 500;
+}
+.main-advanced h5
+{
+    font-weight: 500;
+    width: 300px;
+}
+.main-advanced form 
+{
+    margin-left: 2em;
+    width: 75%;
+    position: relative;
+}
+.main-advanced section 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-advanced input[type=text]
+{
+    padding: 0;
+    padding-left: 1em;
+    height: 40px;
+    width: 70%;
+    border-radius: 0;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    border: 2px solid;
+    background-image: none;
+}
+.text-form 
+{
+    margin-left: 0.5em;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(75, 71, 71);
+}
+.button-advanced 
+{
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid rgb(68, 68, 180);
+    background-color: rgb(44, 44, 123);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.button 
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 section
 {
     width: 100%;
@@ -135,7 +237,7 @@ input[type=submit]:hover
     width: 100px;
     height: 100px;
 }
-h2
+.h2-image
 {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -143,7 +245,7 @@ h2
     text-align: end;
     
 }
-h2 
+.h2-image 
 {
     position: relative;
     left: 30px;
@@ -170,11 +272,95 @@ h2
         padding: 0.8em;
         padding-left: 3em;
     }
-    h2 
+    .h2-image 
     {
         font-size: 1rem;
     }
    
+}
+@media (max-width:800px)
+{
+    .main-advanced section 
+    {
+        justify-content: flex-start;
+    }
+    .main-advanced form
+    {
+        width: 100%;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .main-advanced h5, .main-advanced h6
+    {
+        margin: 1.5em;
+        width: 200px;
+    }
+    .main-advanced h6 
+    {
+        display: none;
+    }
+    .main-advanced input[type=text]
+    {
+        height: 30px;
+        width: 45%;
+    }
+    .search-box 
+    {
+        display: none;
+    }
+    
+}
+/* responsiveness for the advanced page */
+@media(max-width: 500px)
+{
+   .main-advanced form 
+   {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+   }
+    .main-advanced form section
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+    .main-advanced h5 
+    {
+        margin: 0em;
+        margin-left: 1em;
+    }
+    .main-advanced input[type=text]
+    {
+        margin-left: 1em;
+        width: 85%;
+    }
+    .text-form h4 
+    {
+        margin-left: 0.5em;
+    }
+    .advanced-header h3 
+    {
+        margin: 0;
+        margin-left: 0.5em;
+    }
+    .advanced-header h3 span 
+    {
+        font-size:2rem;
+    }
+    .main-advanced h2 
+    {
+        margin: 0.5em;
+      
+    }
+    .totoro3 
+    {
+        width: 5em;
+        height: 5em;
+    }
 }
 @media(min-width: 600px)
 {
